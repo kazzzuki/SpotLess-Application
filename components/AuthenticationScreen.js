@@ -6,7 +6,7 @@ const AuthenticationScreen = ({ navigation }) => {
 
   const handleLogin = () => {
     if (operatorId) {
-      navigation.navigate('Alerts', { operatorId }); // Pass operatorId
+      navigation.navigate('Alerts', { operatorId });
     }
   };
 
@@ -58,14 +58,14 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   loginButton: {
-    backgroundColor: 'black', // Button background color
+    backgroundColor: 'black',
     padding: 10,
     borderRadius: 5,
-    width: '80%', // Width of the button
-    alignItems: 'center', // Center the text
+    width: '80%',
+    alignItems: 'center',
   },
   buttonText: {
-    color: 'white', // Text color
+    color: 'white',
     fontWeight: 'bold',
   },
 });

@@ -10,11 +10,10 @@ import StatisticsScreen from '../components/StatisticsScreen';
 
 const Stack = createNativeStackNavigator();
 
-// Custom Settings button component
 const SettingsButton = ({ navigation }) => (
   <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
     <Image
-      source={require('../assets/images/settings.png')} // Ensure you have a settings icon in assets/images
+      source={require('../assets/images/settings.png')}
       style={{ width: 24, height: 24, marginLeft: 10 }}
     />
   </TouchableOpacity>
@@ -27,14 +26,14 @@ export default function App() {
         <Stack.Screen 
           name="Authentication" 
           component={AuthenticationScreen} 
-          options={{ headerShown: false }} // Hide the header for Authentication screen
+          options={{ headerShown: false }}
         />
         <Stack.Screen 
           name="Alerts" 
           component={AlertsScreen} 
           options={({ navigation }) => ({
             headerLeft: () => <SettingsButton navigation={navigation} />,
-            headerTitleAlign: 'center', // Center the title
+            headerTitleAlign: 'center',
           })}
         />
         <Stack.Screen 
@@ -42,7 +41,7 @@ export default function App() {
           component={AlertDetailsScreen} 
           options={{
             headerBackTitleVisible: false,
-            headerTitleAlign: 'center', // Center the title
+            headerTitleAlign: 'center',
           }}
         />
         <Stack.Screen 
@@ -50,7 +49,7 @@ export default function App() {
           component={TemplateScreen} 
           options={({ navigation }) => ({
             headerLeft: () => <SettingsButton navigation={navigation} />,
-            headerTitleAlign: 'center', // Center the title
+            headerTitleAlign: 'center',
           })}
         />
         <Stack.Screen 
@@ -58,7 +57,7 @@ export default function App() {
           component={StatisticsScreen} 
           options={({ navigation }) => ({
             headerLeft: () => <SettingsButton navigation={navigation} />,
-            headerTitleAlign: 'center', // Center the title
+            headerTitleAlign: 'center',
           })}
         />
       </Stack.Navigator>
@@ -69,6 +68,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff', // Set entire app background to white
+    backgroundColor: '#ffffff',
   },
 });

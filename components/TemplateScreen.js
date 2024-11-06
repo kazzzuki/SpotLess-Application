@@ -7,7 +7,7 @@ const TemplateScreen = ({ navigation }) => {
 
   const handleStart = () => {
     setTemplateGenerated(true);
-    setIsRecalibrating(false); // Reset recalibration state
+    setIsRecalibrating(false);
   };
 
   const handleRecalibrate = () => {
@@ -75,17 +75,17 @@ const styles = StyleSheet.create({
     width: 40,
   },
   startButton: {
-    backgroundColor: 'blue', // Default background color when clickable
+    backgroundColor: 'blue',
     padding: 10,
     borderRadius: 5,
   },
   recalibrateButton: {
-    backgroundColor: 'blue', // Default background color when clickable
+    backgroundColor: 'blue',
     padding: 10,
     borderRadius: 5,
   },
   disabledButton: {
-    backgroundColor: 'grey', // Background color when disabled
+    backgroundColor: 'grey',
   },
   buttonText: {
     color: 'white',

@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    justifyContent: 'center', // Center the content vertically
-    alignItems: 'center', // Center horizontally
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   title: {
     fontSize: 24,
@@ -38,17 +38,17 @@ const styles = StyleSheet.create({
   },
   tabContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between', // Align tabs to the edges
+    justifyContent: 'space-between',
     borderTopWidth: 1,
     borderTopColor: '#ccc',
     backgroundColor: 'white',
     height: 80,
-    paddingHorizontal: 16, // Add horizontal padding
+    paddingHorizontal: 16,
   },
   tab: {
     alignItems: 'center',
-    justifyContent: 'center', // Center icons vertically
-    flex: 1, // Make tabs take equal space
+    justifyContent: 'center',
+    flex: 1,
   },
   icon: {
     width: 40,
